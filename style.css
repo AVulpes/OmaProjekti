@@ -1,14 +1,13 @@
   a{
     text-decoration: none;
   }
-  .grid-container {
-    display: grid | inline-grid;
-    grid-template-columns: 70px 70px 70px 70px 70px;
-    grid-template-rows: 30px;
-    font-size: 20px;
-    justify-content: space-evenly;
-    border-collapse: collapse;
-  }
+
+#Navigation {
+  border: 2px solid black;
+  width: fit-content;
+  padding: 10px;
+  
+}
 
   
 body {
