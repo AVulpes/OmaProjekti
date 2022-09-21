@@ -2,7 +2,7 @@
     text-decoration: none;
   }
   .grid-container {
-    display: grid;
+    display: grid | inline-grid;
     grid-template-columns: 70px 70px 70px 70px 70px;
     grid-template-rows: 30px;
     font-size: 20px;
