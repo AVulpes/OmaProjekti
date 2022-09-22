@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(206, 226, 255);
   font-family: Arial, Helvetica, sans-serif;
   background-image: url('bg.jpg');
   color: rgb(124, 96, 62);;
@@ -31,12 +31,17 @@ h1 {
   text-align: center;
 }
 
+.jump {
+  font-style: italic;
+}
+
 img#tehtavat {
   transition: transform 0.25s ease;
   display: block;
   margin-left: auto;
   margin-right: auto;
   border: 1px solid black;
+  width: max-content;
 }
 
 img#tehtavat:hover {
@@ -68,6 +73,7 @@ img#tehtavat:hover {
 .lista {
   display: flex;
   justify-content: center;
+  padding-bottom: 60px;
 }
 
 #navlinks {
@@ -77,6 +83,7 @@ img#tehtavat:hover {
   padding: 5px;
   margin: auto;
   border-radius: 10px;
+
 }
 
 #Contents {
@@ -84,6 +91,7 @@ img#tehtavat:hover {
   width: fit-content;
   padding: 5px;
   border-radius: 25px;
+  text-align: left;
 }
 
 #navheader, #tehtavat {
@@ -101,4 +109,37 @@ img#tehtavat:hover {
 
 #mailto {
   color: black;
+}
+
+#tehtava1, #tehtava2 {
+  padding-top: 50px;
+}
+
+input {
+  margin: 5px;
+}
+
+fieldset {
+  background-color: aliceblue;
+  width: 550px;
+  min-width: 550px;
+  max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+#palaute {
+  width: 550px;
+  max-width: 545px;
+  min-height: 100px;
+  resize: vertical;
+  overflow: visible;
+}
+
+#banner {
+  width: 100%;
+  height: 205px;
+  background-image: url(banner.jpg);
+  background-position: center;
 }
