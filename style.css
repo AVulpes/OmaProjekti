@@ -1,73 +1,68 @@
 body {
-  background-color: rgb(206, 226, 255);
+  font-size: large;
+  background-color: rgb(24, 19, 14);
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url('bg.jpg');
-  color: rgb(124, 96, 62);;
+  color: rgb(124, 96, 62);
+}
+
+.banner {
+  width: 100%;
+  height: 205px;
+  background-image: url(banner.png);
+  background-position: center;
 }
 
 a, a:visited, a:active, a:hover, a:link{
   text-decoration: none;
-  color: rgb(168, 152, 132);
+  color: rgb(255, 255, 255);
 }
 
 a:hover {
   color: crimson;
 }
 
-h1 {
+h1, h2, h3 {
   font-family: 'Times New Roman', Times, serif;
-  text-align: center;
   color: rgb(177, 137, 88);
 }
 
-.jumpto {
+.navlinks {
   background-color: #9b9b9b8a;
-  width: 100%;
-  max-width: fit-content;
-  height: auto;
-  position: fixed;
-  top: 30%;
-  border-radius: 25px;
-  text-align: center;
+  border: 0px solid black;
+  width: fit-content;
+  padding: 5px;
+  margin: auto;
+  border-radius: 10px;
 }
 
-.jump {
+.jumpto {
+  position: fixed;
+  top: 30%;
+}
+
+.Contents {
+  padding: 5px;
+  text-align: left;
+}
+
+.jumpto, .Contents {
+  color: beige;
+  background-color: #9b9b9b8a;
+  width: fit-content;
+  height: auto;
+  border-radius: 25px;
   font-style: italic;
 }
 
-img#tehtavat {
+.kuvat {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   transition: transform 0.25s ease;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
-  width: max-content;
 }
 
-img#tehtavat:hover {
-  transform:scale(1.75);
-}
-
-.kuva1 {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
-
-.kuva2 {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-}
-
-#projektiheader {
-  padding-top: 50px;
-}
-
-.projektit, .projektith {
-  height: fit-content;
-  display: flex;
-  justify-content: center;
+.kuvat:hover {
+  transform:scale(1.1);
 }
 
 .lista {
@@ -76,51 +71,12 @@ img#tehtavat:hover {
   padding-bottom: 60px;
 }
 
-#navlinks {
-  background-color: #9b9b9b8a;
-  border: 0px solid black;
-  width: fit-content;
-  padding: 5px;
-  margin: auto;
-  border-radius: 10px;
-
-}
-
-#Contents {
-  background-color: #9b9b9b8a;
-  width: fit-content;
-  padding: 5px;
-  border-radius: 25px;
-  text-align: left;
-}
-
-#navheader, #tehtavat {
-    text-align: center;
-}
-
-.download {
-  font-size: 10px;
+.tehtavat, h1, h2, h3, h4, .jumpto {
   text-align: center;
 }
 
-.mailto {
-  text-align: right;
-}
-
-#mailto {
-  color: black;
-}
-
-#tehtava1, #tehtava2 {
-  padding-top: 50px;
-}
-
-input {
-  margin: 5px;
-}
-
 fieldset {
-  background-color: aliceblue;
+  background-color: rgba(240, 248, 255, 0.808);
   width: 550px;
   min-width: 550px;
   max-width: 550px;
@@ -129,7 +85,7 @@ fieldset {
   margin-top: 40px;
 }
 
-#palaute {
+.palaute {
   width: 550px;
   max-width: 545px;
   min-height: 100px;
@@ -137,9 +93,6 @@ fieldset {
   overflow: visible;
 }
 
-#banner {
-  width: 100%;
-  height: 205px;
-  background-image: url(banner.jpg);
-  background-position: center;
+legend {
+  padding-top: 25px;
 }
