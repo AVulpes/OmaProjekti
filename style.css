@@ -5,53 +5,100 @@ body {
   color: rgb(124, 96, 62);;
 }
 
-#bg {
-  border: 1px solid black;
-  background-color: rgba(154, 205, 253, 0.192);
-  width: auto;
-  height: auto;
-  padding: 5px;
-}
-
 a, a:visited, a:active, a:hover, a:link{
   text-decoration: none;
   color: rgb(168, 152, 132);
 }
 
+a:hover {
+  color: crimson;
+}
+
 h1 {
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    color: rgb(177, 137, 88);
-  }
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: rgb(177, 137, 88);
+}
 
-.twain {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
+.jumpto {
+  background-color: #9b9b9b8a;
+  width: 100%;
+  max-width: fit-content;
+  height: auto;
+  position: fixed;
+  top: 30%;
+  border-radius: 25px;
+  text-align: center;
+}
 
-.cat {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-  }
+img#tehtavat {
+  transition: transform 0.25s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid black;
+}
 
-.queen {
-    width: 100%;
-    height: auto;
-  }
+img#tehtavat:hover {
+  transform:scale(1.75);
+}
 
-#Contents1 {
+.kuva1 {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.kuva2 {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+#projektiheader {
+  padding-top: 50px;
+}
+
+.projektit, .projektith {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+.lista {
+  display: flex;
+  justify-content: center;
+}
+
+#navlinks {
   background-color: #9b9b9b8a;
   border: 0px solid black;
   width: fit-content;
   padding: 5px;
   margin: auto;
-  }
+  border-radius: 10px;
+}
 
 #Contents {
   background-color: #9b9b9b8a;
-  border: 2px solid black;
   width: fit-content;
   padding: 5px;
-  }
+  border-radius: 25px;
+}
+
+#navheader, #tehtavat {
+    text-align: center;
+}
+
+.download {
+  font-size: 10px;
+  text-align: center;
+}
+
+.mailto {
+  text-align: right;
+}
+
+#mailto {
+  color: black;
+}
